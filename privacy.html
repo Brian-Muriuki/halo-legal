@@ -206,11 +206,12 @@
 
         <p><strong>Spiritual Content You Create:</strong></p>
         <ul>
-            <li>Journal entries (private and secure)</li>
-            <li>Prayer requests (public or private, as you designate)</li>
-            <li>Testimonies (public)</li>
+            <li>Journal entries (private and secure, protected by Row Level Security)</li>
+            <li>Prayer requests (public, with optional anonymous posting)</li>
+            <li>Testimonies (public, with optional anonymous posting)</li>
             <li>Comments and replies</li>
             <li>Circle (faith community) posts and messages</li>
+            <li>AI chat conversations with Halo (see AI Services section)</li>
         </ul>
 
         <h3>1.2 Information Automatically Collected</h3>
@@ -235,20 +236,20 @@
         <h2>3. How We Share Your Information</h2>
 
         <h3>3.1 Public Information</h3>
-        <p><strong>YOU control what's public:</strong></p>
+        <p><strong>What's Public:</strong></p>
         <ul>
-            <li>Prayer requests marked as "public" are visible to all users</li>
-            <li>Testimonies are public by default</li>
+            <li>Prayer requests are visible to all users (you can post anonymously)</li>
+            <li>Testimonies are visible to all users (you can post anonymously)</li>
             <li>Your profile information (name, picture) is visible to other users</li>
             <li>Circle posts are visible to circle members</li>
         </ul>
 
         <div class="highlight">
-            <p><strong>Private by Default:</strong></p>
+            <p><strong>Always Private:</strong></p>
             <ul>
-                <li>Journal entries are NEVER shared (protected by Row Level Security)</li>
-                <li>Private prayer requests are only visible to you</li>
+                <li>Journal entries are NEVER shared (protected by Row Level Security and encryption)</li>
                 <li>Your email address is NEVER shown to other users</li>
+                <li>Your AI chat history is private to you (though messages are sent to OpenAI for processing)</li>
             </ul>
         </div>
 
@@ -256,7 +257,7 @@
         <p>We share information with trusted third-party service providers:</p>
         <ul>
             <li><strong>Supabase:</strong> Database and authentication (SOC 2 certified)</li>
-            <li><strong>OpenAI:</strong> AI content generation (does NOT receive personal data)</li>
+            <li><strong>OpenAI:</strong> Halo Chat messages are sent to OpenAI for AI responses. We do NOT send your personal information (name, email, profile data). See <a href="https://openai.com/privacy" target="_blank">OpenAI Privacy Policy</a></li>
             <li><strong>Expo/OneSignal:</strong> Push notifications</li>
         </ul>
 
@@ -271,7 +272,8 @@
         <p><strong>Data Retention:</strong></p>
         <ul>
             <li>Active accounts: Information retained while account is active</li>
-            <li>Deleted accounts: Permanently deleted within 30 days</li>
+            <li>AI Chat History: Can be deleted anytime (long-press a conversation in Chat History to delete). Once sent to OpenAI, messages are handled per OpenAI's retention policy</li>
+            <li>Deleted accounts: 7-day grace period to cancel. After 7 days, all information is permanently deleted</li>
             <li>Anonymized data: May be retained indefinitely for analytics</li>
         </ul>
 
@@ -280,7 +282,7 @@
         <ul>
             <li><strong>Access:</strong> Request a copy of your data (Settings → Privacy → Download My Data)</li>
             <li><strong>Correction:</strong> Update inaccurate information (Settings → Profile)</li>
-            <li><strong>Deletion:</strong> Delete your account and data (Settings → Account → Delete Account)</li>
+            <li><strong>Deletion:</strong> Delete your account and data (Settings → Password & Security → Delete Account). 7-day grace period to cancel.</li>
             <li><strong>Export:</strong> Download all your data in JSON format</li>
             <li><strong>Opt-Out:</strong> Disable analytics (Settings → Privacy → Analytics)</li>
         </ul>
